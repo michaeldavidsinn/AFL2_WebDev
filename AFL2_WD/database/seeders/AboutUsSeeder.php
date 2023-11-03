@@ -12,6 +12,6 @@ class AboutUsSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\AboutUs::factory(1)->create();
+        \App\Models\AboutUs::factory(5)->create();
     }
 }

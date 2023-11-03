@@ -9,10 +9,9 @@ class CompanyProfile extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'tentang_kami' ,
-        'visi',
-        'misi',
-        'sejarah'
-    ];
+    protected $fillable = [ 'tentang_kami' , 'visi', 'misi','sejarah' ];
+
+    public static function allCompanyProfile(){
+        return collect(self::$fillable);
+    }
 }

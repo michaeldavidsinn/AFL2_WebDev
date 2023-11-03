@@ -10,4 +10,8 @@ class News extends Model
     use HasFactory;
 
     protected $fillable = ['judul' ,'deskripsi','foto', 'tanggal'];
+
+    public static function allNews(){
+        return collect(self::$fillable);
+    }
 }

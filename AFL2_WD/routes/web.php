@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\CompanyProfileController;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ProjectController;
+use App\Models\AboutUs;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,32 +18,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function() {
+    return view('view');
 });
 
-
 // Company Profile routes
-Route::get('/company-profile', 'CompanyProfileController@index')->name('company-profile.index');
-Route::get('/company-profile/edit/{companyProfile}', 'CompanyProfileController@edit')->name('company-profile.edit');
-Route::put('/company-profile/update/{companyProfile}', 'CompanyProfileController@update')->name('company-profile.update');
-Route::get('/company-profile/show/{companyProfile}', 'CompanyProfileController@show')->name('company-profile.show'); // Show a single company profile
+
+
+Route::get('/company_profile_view', [CompanyProfileController::class, 'index'],);
 
 // About Us routes
-Route::get('/about-us', 'AboutUsController@index')->name('about-us.index');
-Route::get('/about-us/edit/{aboutUs}', 'AboutUsController@edit')->name('about-us.edit');
-Route::put('/about-us/update/{aboutUs}', 'AboutUsController@update')->name('about-us.update');
-Route::get('/about-us/show/{aboutUs}', 'AboutUsController@show')->name('about-us.show'); // Show a single about us record
+
+Route::get('/about_us_view', [AboutUsController::class, 'index']);
+
 
 // News routes
-Route::get('/news', 'NewsController@index')->name('news.index');
-Route::get('/news/edit/{news}', 'NewsController@edit')->name('news.edit');
-Route::put('/news/update/{news}', 'NewsController@update')->name('news.update');
-Route::get('/news/show/{news}', 'NewsController@show')->name('news.show'); // Show a single news item
+Route::get('/news_view', [NewsController::class, 'index']);
 
 // Project routes
-Route::get('/projects', 'ProjectController@index')->name('projects.index');
-Route::get('/projects/edit/{project}', 'ProjectController@edit')->name('projects.edit');
-Route::put('/projects/update/{project}', 'ProjectController@update')->name('projects.update');
-Route::get('/projects/show/{project}', 'ProjectController@show')->name('projects.show'); // Show a single project
+Route::get('/project_view', [ProjectController::class, 'index']);
 
