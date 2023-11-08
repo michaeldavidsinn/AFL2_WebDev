@@ -16,6 +16,7 @@ class AboutUsFactory extends Factory
      */
     public function definition(): array
     {
+      
         return [
                 'alamat' => $this->faker->address,
                 'nomor_telepon' => $this->faker->phoneNumber,

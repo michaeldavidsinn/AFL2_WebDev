@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Project ;
 use Illuminate\Database\Seeder;
 
 class ProjectSeeder extends Seeder
@@ -12,6 +13,6 @@ class ProjectSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Project::factory(5)->create();
+        Project::factory(10)->create();
     }
 }

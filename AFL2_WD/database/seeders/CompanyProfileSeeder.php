@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\CompanyProfile;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +13,6 @@ class CompanyProfileSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\ CompanyProfile::factory(5)->create();
+        CompanyProfile::factory(1)->create();
     }
 }

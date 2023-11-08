@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\AboutUs;
 use Illuminate\Database\Seeder;
 
 class AboutUsSeeder extends Seeder
@@ -12,6 +13,7 @@ class AboutUsSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\AboutUs::factory(5)->create();
+        AboutUs::factory(1)->create();
+
     }
 }

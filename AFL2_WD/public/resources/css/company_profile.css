@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+
+}
+/* .container{
+    background:url(resources/image/Orang_pabrik.jpg) no-repeat;
+    display: flex;
+} */
+.container .image{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.image img{
+    /* display: flex; */
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+#slider-container {
+    /* display: flex; */
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    position: relative;
+  }
+
+  #slider {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+
+  #slide {
+    /* width: 100px; Sesuaikan lebsar dengan kebutuhan */
+    height: auto;
+    object-fit: cover;
+  }
+
+  #prevButton,
+#nextButton {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+#prevButton:hover,
+#nextButton:hover {
+  background-color: #555;
+}

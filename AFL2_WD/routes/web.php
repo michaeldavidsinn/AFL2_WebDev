@@ -18,9 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function() {
-    return view('view');
-});
+Route::get('/',[CompanyProfileController::class, 'index']);
 
 // Company Profile routes
 
