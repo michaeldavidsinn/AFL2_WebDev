@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\AboutUs;
 use Illuminate\Database\Seeder;
@@ -13,7 +14,14 @@ class AboutUsSeeder extends Seeder
      */
     public function run(): void
     {
-        AboutUs::factory(1)->create();
+        DB::table('about_us')->insert([
+
+            'alamat' => "Pakuwon Mall",
+            'nomor_telepon' => "0930429344",
+            'email' => "stevennelson@gmail.com",
+            'jam_kerja' => "09.00"
+        ]);
+
 
     }
 }
