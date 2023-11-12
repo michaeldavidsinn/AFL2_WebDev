@@ -16,7 +16,6 @@ class Project extends Model
     }
 
     public function detailproject() : HasOne {
-
         return $this->HasOne(DetailProject::class);
     }
 }

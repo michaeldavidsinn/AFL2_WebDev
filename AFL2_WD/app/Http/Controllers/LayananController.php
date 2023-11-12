@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreLayananRequest;
 use App\Http\Requests\UpdateLayananRequest;
+use Illuminate\Routing\Controller as Controller;
 use App\Models\Layanan;
 
 class LayananController extends Controller

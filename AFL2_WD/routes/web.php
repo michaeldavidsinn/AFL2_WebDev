@@ -21,11 +21,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[CompanyProfileController::class, 'index']);
+Route::get('/', [CompanyProfileController::class, 'index']);
 
 // Company Profile routes
 
-Route::get('/company_profile_view', [CompanyProfileController::class, 'index']);
+Route::get('/company_profile_view', [CompanyProfileController::class, 'index']) ;
 
 // About Us routes
 Route::get('/about_us_view', [AboutUsController::class, 'index']);
@@ -37,7 +37,7 @@ Route::get('/news_view', [NewsController::class, 'index']);
 Route::get('/project_view', [ProjectController::class, 'index']);
 
 // Detail Project routes
-Route::get('/detail_project_view', [DetailProjectController::class, 'index']);
+Route::get('/detail_project_view/{code}', [DetailProjectController::class, 'show']);
 
 // Misi routes
 Route::get('/misi_view', [MisiController::class, 'index']);

@@ -1,21 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
+@foreach ($project->DetailProject as $detail )
+
+
     <div class="container">
 
         <tr>
-            <td>{{ $project->id }}</td>
-            <td>{{ $project->jenis_pekerjaan }}</td>
-            <td>{{ $project->pemberi_pekerjaan }}</td>
-            <td>{{ $project->lokasi }}</td>
-            <td>{{ $project->nomor_telepon }}</td>
-            <td>{{ $project->email }}</td>
-            <td>{{ $project->deskripsi_pekerjaan }}</td>
+            <td>{{ $detail->id }}</td>
+            <td>{{ $detail->jenis_pekerjaan }}</td>
+            <td>{{ $detail->pemberi_pekerjaan }}</td>
+            <td>{{ $detail->lokasi }}</td>
+            <td>{{ $detail->nomor_telepon }}</td>
+            <td>{{ $detail->email }}</td>
+            <td>{{ $detail->deskripsi_pekerjaan }}</td>
             <td>
-                <img src="{{ asset('storage/' . $project->foto_dokumentasi) }}" alt="Foto Dokumentasi"
+                <img src="{{ asset('storage/' . $detail->foto_dokumentasi) }}" alt="Foto Dokumentasi"
                     style="max-width: 100px; max-height: 100px;">
             </td>
         </tr>
-
+        @endforeach
     </div>
 @endsection

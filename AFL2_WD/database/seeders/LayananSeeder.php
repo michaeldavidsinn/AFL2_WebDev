@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use DB;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,7 +15,7 @@ class LayananSeeder extends Seeder
     {
         DB::table('layanans')->insert([
 
-            'nama_Layanan' => "Nama Layanan",
+            'nama_layanan' => "Nama Layanan",
             'deskripsi_layanan' => "Deskripsi Layanan",
         ]);
     }
