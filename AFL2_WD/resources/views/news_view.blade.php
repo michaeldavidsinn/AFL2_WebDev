@@ -5,7 +5,6 @@
 @endsection
 
 @section('layout_content')
-
     <div class="container mx-auto p-8">
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -24,22 +23,21 @@
                 </thead>
                 <tbody>
                     @foreach ($news as $News)
-                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                        <td class="w-32 p-4 p-2">
-                           {{-- <img src="public/storage/{{ $News['foto'] }}" alt=""> --}}
-                           {{-- <img src="public/storage/news_image.jpg" alt=""> --}}
-                           <img src="{{asset ('storage/'.$News['foto'])}}" alt="">
-
-                        </td>
-                        <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white p-2">
-                            {{ $News['judul'] }}
-                        </td>
-                        <td class=" p-4 p-2">
-                            {{ $News['deskripsi'] }}
-                        </td>
-                        <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                            {{ $News['tanggal'] }}
-                        </td>
+                        <tr
+                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="w-auto h-full p-4">
+                                <iframe class=" border-lg" width="auto" height="auto" src=" {{ $News['foto'] }}"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </td>
+                            <td class=" p-4">
+                                <h2 class="font-bold text-2xl text-white">{{ $News['judul'] }}</h2>
+                                <p> {{ $News['deskripsi'] }}</p>
+                            </td>
+                            <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                                {{ $News['tanggal'] }}
+                            </td>
                     @endforeach
                 </tbody>
             </table>
