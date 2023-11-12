@@ -18,9 +18,17 @@ class CompanyProfileFactory extends Factory
     {
         return [
             'tentang_kami' => $this->faker->paragraph,
+            'tentang_kami1' => $this->faker->sentence,
+            'tentang_kami2' => $this->faker->sentence,
+            'tentang_kami3' => $this->faker->sentence,
+            'tentang_kami4' => $this->faker->sentence,
+            'tentang_kami5' => $this->faker->sentence,
             'visi' => $this->faker->sentence,
             'misi' => $this->faker->sentence,
             'sejarah' => $this->faker->paragraph,
+            'sejarah1' => $this->faker->paragraph,
+            'sejarah2' => $this->faker->paragraph,
+            'sejarah3' => $this->faker->paragraph
         ];
     }
 }

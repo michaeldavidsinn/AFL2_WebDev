@@ -1,8 +1,11 @@
 <?php
 
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\AllDeskripsiController;
 use App\Http\Controllers\CompanyProfileController;
 use App\Http\Controllers\DetailProjectController;
+use App\Http\Controllers\LayananController;
+use App\Http\Controllers\MisiController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
@@ -35,3 +38,12 @@ Route::get('/project_view', [ProjectController::class, 'index']);
 
 // Detail Project routes
 Route::get('/detail_project_view', [DetailProjectController::class, 'index']);
+
+// Misi routes
+Route::get('/misi_view', [MisiController::class, 'index']);
+
+// Layananroutes
+Route::get('/layanan_view', [LayananController::class, 'index']);
+
+// All Deskripsi routes
+Route::get('/all_deskripsi_view', [AllDeskripsiController::class, 'index']);

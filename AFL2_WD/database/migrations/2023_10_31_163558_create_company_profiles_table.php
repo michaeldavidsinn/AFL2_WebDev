@@ -15,9 +15,17 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->text('tentang_kami')->nullable(false);
+            $table->text('tentang_kami1')->nullable(false);
+            $table->text('tentang_kami2')->nullable(false);
+            $table->text('tentang_kami3')->nullable(false);
+            $table->text('tentang_kami4')->nullable(false);
+            $table->text('tentang_kami5')->nullable(false);
             $table->text('visi')->nullable(false);
             $table->text('misi')->nullable(false);
             $table->text('sejarah')->nullable(false);
+            $table->text('sejarah1')->nullable(false);
+            $table->text('sejarah2')->nullable(false);
+            $table->text('sejarah3')->nullable(false);
         });
     }
 
