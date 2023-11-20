@@ -5,8 +5,9 @@
 @endsection
 
 @section('layout_content')
+
     <div class="container mx-auto py-8 px-40">
-        <h3 class=" font-bold text-5xl text-center pb-4 pt-10"> Berita Terkni </h3>
+        <h3 class=" font-bold text-5xl text-center pb-4 pt-10"> Berita Terkini </h3>
         <h2 class=" text-center pb-8"> Berikut berita terkini mengenai perusahaan kami</h2>
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">

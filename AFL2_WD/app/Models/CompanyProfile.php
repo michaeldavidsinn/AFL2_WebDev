@@ -39,8 +39,4 @@ class CompanyProfile extends Model
     'sejarah2',
     'sejarah3'];
 
-    public static function allCompanyProfile()
-    {
-        return collect(self::$fillable);
-    }
 }

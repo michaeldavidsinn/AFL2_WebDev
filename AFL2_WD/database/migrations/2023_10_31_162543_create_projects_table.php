@@ -21,8 +21,8 @@ return new class extends Migration
             $table->text('pemberi_pekerjaan')->nullable(false);
             $table->text('jenis_pekerjaan')->nullable(false);
             $table->text('tanggal')->nullable(false);
-            $table->unsignedBigInteger('detail_project_id');
-            $table->foreign('detail_project_id')->references('id')->on('detail_projects')->onDelete('cascade');
+            $table->unsignedBigInteger('detail_projects_id');
+            $table->foreign('detail_projects_id')->references('id')->on('detail_projects')->onDelete('cascade');
             // $table->foreignIdFor(\App\Models\DetailProject::class);
         });
     }

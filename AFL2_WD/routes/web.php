@@ -9,6 +9,8 @@ use App\Http\Controllers\MisiController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
+use App\Models\DetailProject;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +39,11 @@ Route::get('/news_view', [NewsController::class, 'index']);
 Route::get('/project_view', [ProjectController::class, 'index']);
 
 // Detail Project routes
-Route::get('/detail_project_view/{code}', [DetailProjectController::class, 'show']);
+// Route::get('/detail_project_view/{projectId}', [DetailProjectController::class, 'show']);
+Route::get('/detail_project_view/{projectId}', function (string $projectId)  {
+    return view('detail_project.view')
+        ->with('project', DetailProject::findOrFail($projectId));
+});
 
 // Misi routes
 Route::get('/misi_view', [MisiController::class, 'index']);

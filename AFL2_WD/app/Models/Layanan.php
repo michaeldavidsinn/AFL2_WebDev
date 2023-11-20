@@ -11,7 +11,5 @@ class Layanan extends Model
 
     protected $fillable = [ 'nama_layanan', 'deskripsi_layanan'];
 
-    public static function allLayanan(){
-        return collect(self::$fillable);
-    }
+   
 }

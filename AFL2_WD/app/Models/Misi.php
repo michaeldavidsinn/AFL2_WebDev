@@ -11,7 +11,5 @@ class Misi extends Model
 
     protected $fillable = [ 'judul_misi', 'deskripsi_misi'];
 
-    public static function allMisi(){
-        return collect(self::$fillable);
-    }
+   
 }

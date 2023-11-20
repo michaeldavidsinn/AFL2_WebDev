@@ -6,7 +6,7 @@
 @section('layout_content')
     <div class="max-w-full z-0">
         <script src="resources/js/company_profile.js"></script>
-        <video class="w-full h-auto max-w-full" autoplay controls>
+        <video class="w-full h-auto max-w-full" autoplay muted controls>
             <source src="resources/image/Company_Profile.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -30,7 +30,7 @@
             </div>
             <h3 class=" font-bold text-5xl text-center pb-8 pt-10"> Layanan Kami </h3>
     </div>
-    <div class="md:px-10 pb-10 lg:px-30 pb-10 flex space-x-4 items-center">
+    <div class="md:px-10 pb-10 lg:px-30 pb-10 flex space-x-4 ">
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
                 <img class="rounded-t-lg" src="resources/image/layanan1.jpg" alt="" />

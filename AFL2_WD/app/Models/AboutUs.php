@@ -11,8 +11,8 @@ class AboutUs extends Model
 
     protected $fillable = ['alamat' ,'nomor_telepon','email', 'jam_kerja'];
 
-    public static function allAboutUs(){
-        return collect(self::$fillable);
-    }
+    // public static function allAboutUs(){
+    //     return collect(self::$fillable);
+    // }
 
 }

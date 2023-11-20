@@ -2,20 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\UpdateCompanyProfileRequest;
-use Illuminate\Routing\Controller as Controller;
-use App\Models\CompanyProfile;
+use App\Models\tes;
+use App\Http\Requests\StoretesRequest;
+use App\Http\Requests\UpdatetesRequest;
 
-class CompanyProfileController extends Controller
+class TesController extends Controller
 {
-
+    /**
+     * Display a listing of the resource.
+     */
     public function index()
     {
-        return view('company_profile_view', [
-
-            "company_profile" => CompanyProfile::all(),
-        ]);
+        //
     }
+
+    /**
+     * Show the form for creating a new resource.
+     */
     public function create()
     {
         //
@@ -24,7 +27,7 @@ class CompanyProfileController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store( $request)
+    public function store(StoretesRequest $request)
     {
         //
     }
@@ -32,7 +35,7 @@ class CompanyProfileController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(CompanyProfile $tes)
+    public function show(tes $tes)
     {
         //
     }
@@ -40,7 +43,7 @@ class CompanyProfileController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(CompanyProfile $tes)
+    public function edit(tes $tes)
     {
         //
     }
@@ -48,7 +51,7 @@ class CompanyProfileController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateCompanyProfileRequest $request, CompanyProfile $tes)
+    public function update(UpdatetesRequest $request, tes $tes)
     {
         //
     }
@@ -56,9 +59,8 @@ class CompanyProfileController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(CompanyProfile $tes)
+    public function destroy(tes $tes)
     {
         //
     }
-
 }

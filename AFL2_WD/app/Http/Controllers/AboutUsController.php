@@ -17,4 +17,49 @@ class AboutUsController extends Controller
             "about_us" => AboutUs::all(),
         ]);
     }
+
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store( $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(AboutUs $tes)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(AboutUs $tes)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(UpdateAboutUsRequest $request, AboutUs $tes)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(AboutUs $tes)
+    {
+        //
+    }
 }

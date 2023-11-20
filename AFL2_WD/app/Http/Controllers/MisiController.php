@@ -18,4 +18,44 @@ class MisiController extends Controller
             "misi" => Misi::all(),
         ]);
     }
+    public function show($code)
+    {
+       //
+    }
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store( $request)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(Misi $tes)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(UpdateMisiRequest $request, Misi $tes)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Misi $tes)
+    {
+        //
+    }
 }
